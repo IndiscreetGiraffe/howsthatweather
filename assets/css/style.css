@@ -13,6 +13,7 @@
 }
 
 .search-container {
-    background-color: indianred;
-
+    border: 3px solid;
+    border-color: indianred;
+    
 }
