@@ -3,11 +3,16 @@
     padding: 0;
 }
 
-.jumbotron  {
+.hero  {
     background-color: indianred;
     text-align: center;
     font-size: larger;
     font-style: bold;
     color:aliceblue
+
+}
+
+.search-container {
+    background-color: indianred;
 
 }
