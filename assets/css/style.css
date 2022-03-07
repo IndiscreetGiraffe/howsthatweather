@@ -39,7 +39,27 @@ button {
     padding: 20px;
 }
 
-.future-container {
-    margin: 30px;
-    padding: 30px;
+.other-row {
+    content: center;
+    border: 2px solid;
+    border-color: black;
+    margin: 10px;
+    padding: 20px;
+}
+
+.past-city {
+    border-top: 2px solid;
+    border-color: black;
+}
+.history-1, .history-2, .history-3,
+.history-4 {
+    content: center;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+
+}
+
+.btn {
+    background-color: indianred;
 }

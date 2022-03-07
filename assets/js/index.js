@@ -10,6 +10,7 @@ var uv = document.querySelector('.uvi');
 
 searchBtn.addEventListener("click", function () {
     currentForecast();
+    futureForecast();
 
 });
 
@@ -29,4 +30,17 @@ function currentForecast() {
         wind.textContent = "Wind : " + data.wind.speed + "MPH";
 
     });
+}
+
+function futureForecast () {
+    var currentName = document.getElementById("city").value;
+    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentName}&appid=${API_Key}&units=imperial`;
+
+    fetch(apiUrl)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+    })
 }
