@@ -11,6 +11,7 @@ var uv = document.querySelector('.uvi');
 searchBtn.addEventListener("click", function () {
     currentForecast();
     futureForecast();
+    saveCity();
 
 });
 
@@ -42,5 +43,15 @@ function futureForecast () {
     })
     .then(function(data) {
         console.log(data);
-    })
+    });
 }
+
+function saveCity () {
+    var currentName = document.getElementById("city").value;
+    var histLoad = JSON.parse(localStorage.getItem(saveCity)) || [];
+    histLoad.push(currentName);
+    localStorage.setItem("city-history", JSON.stringify(histLoad));
+
+    
+}
+

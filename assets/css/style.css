@@ -3,12 +3,13 @@
     padding: 0;
 }
 
-.hero  {
+.hero {
     background-color: indianred;
     text-align: center;
     font-size: larger;
     font-style: bold;
-    color:aliceblue
+    color:aliceblue;
+    width: 100%;
 
 }
 
