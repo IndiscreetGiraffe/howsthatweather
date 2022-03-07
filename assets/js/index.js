@@ -1,25 +1,25 @@
-var api_Key = "bee83911dfeeb510a7e77e6f32642452";
+var API_Key = "bee83911dfeeb510a7e77e6f32642452";
 var searchBtn = document.querySelector("#search-btn");
-var currentWeather = document.querySelector(".current-weather");
-var userCity = document.querySelector("city");
+var current = document.querySelector('.current-weather');
+var cityName = document.getElementById("city").value;
 
 
 searchBtn.addEventListener("click", function () {
-    currentForecast();
+    currentWeather();
 
 });
 
-let currentForecast = function () {
-    let userCity = document.getElementById("city");
-    console.log(userCity);
+let currentWeather = function () {
+    let cityName = document.getElementById("city").value;
+    console.log(cityName);
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=${api_Key}&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=imperial`)
     .then(function(response) {
         response.json().then(function(data) {
             console.log(data);
-            $('.current-header').text(userCity);
-            $('.temp').text('Temperature: ' + data.current.temp + ' degrees');
+            $('.current-header').text(cityName);
+            $('.temp').text('Temperature: ' + data.main.temp + ' degrees');
 
-        })
-    })
+        });
+    });
 }
