@@ -19,7 +19,12 @@
     padding: 30px;
 }
 
-.forecast-container {
+.current-weather {
+    margin: 20px;
+    padding: 30px;
+}
+
+.future-container {
     margin: 30px;
     padding: 30px;
 }
