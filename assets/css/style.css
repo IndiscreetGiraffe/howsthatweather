@@ -19,6 +19,10 @@
     padding: 30px;
 }
 
+button {
+    background-color: indianred;
+}
+
 .current-weather {
     margin: 20px;
     padding: 30px;
