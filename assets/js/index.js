@@ -17,7 +17,8 @@ function currentForecast() {
     })
     .then(function(data) {
         console.log(data);
-        console.log("city");
-        console.log("The temperature is:", data.main.temp);
+
+        current.textContent = "City: " + data.name;
+
     });
 }
