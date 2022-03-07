@@ -39,13 +39,8 @@ button {
     margin: 10px;
     padding: 20px;
 }
-
-.other-row {
-    content: center;
-    border: 2px solid;
-    border-color: black;
-    margin: 10px;
-    padding: 20px;
+.other-container {
+    padding: 10px;
 }
 
 .past-city {
@@ -58,9 +53,14 @@ button {
     margin: 10px;
     padding: 20px;
     width: 80%;
+    color: white;
 
 }
 
 .btn {
     background-color: indianred;
+}
+
+.row {
+    content: center;
 }
