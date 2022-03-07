@@ -5,11 +5,11 @@ var cityName = document.getElementById("city").value;
 
 
 searchBtn.addEventListener("click", function () {
-    currentWeather();
+    currentForecast();
 
 });
 
-let currentWeather = function () {
+let currentForecast = function () {
     let cityName = document.getElementById("city").value;
     console.log(cityName);
 
@@ -17,8 +17,6 @@ let currentWeather = function () {
     .then(function(response) {
         response.json().then(function(data) {
             console.log(data);
-            $('.current-header').text(cityName);
-            $('.temp').text('Temperature: ' + data.main.temp + ' degrees');
 
         });
     });
