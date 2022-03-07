@@ -1,7 +1,6 @@
 var API_Key = "bee83911dfeeb510a7e77e6f32642452";
 var searchBtn = document.querySelector("#search-btn");
 var current = document.querySelector('.current-weather');
-var cityName = document.getElementById("city").value;
 
 
 searchBtn.addEventListener("click", function () {
@@ -9,15 +8,16 @@ searchBtn.addEventListener("click", function () {
 
 });
 
-let currentForecast = function () {
-    let cityName = document.getElementById("city").value;
-    console.log(cityName);
-
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=imperial`)
+function currentForecast() {
+    var cityName = document.getElementById("city").value;
+    var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=imperial`;
+    fetch(apiURL)
     .then(function(response) {
-        response.json().then(function(data) {
-            console.log(data);
-
-        });
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        console.log("city");
+        console.log("The temperature is:", data.main.temp);
     });
 }
