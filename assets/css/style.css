@@ -13,24 +13,30 @@
 }
 
 .search-container {
-    border: 3px solid;
-    border-color: black;
+    content: center;
     margin: 20px;
     padding: 30px;
+}
+
+.search-bar {
+    content: center;
+    border: 2px solid;
+    border-color: black;
+    margin: 10px;
+    padding: 20px;
 }
 
 button {
     background-color: indianred;
+    margin: 5px;
 }
 
 .current-weather {
-    margin: 20px;
-    padding: 30px;
-}
-
-.temp {
-    color: black;
-    font-size: small;
+    content: center;
+    border: 2px solid;
+    border-color: black;
+    margin: 10px;
+    padding: 20px;
 }
 
 .future-container {
