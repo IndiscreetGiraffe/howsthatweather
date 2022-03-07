@@ -14,7 +14,7 @@
 
 
   ## Project Description 
-  An application to search for and show the weather for whatever city you like.
+  An application to search for and show the weather for whatever city you like. With the potential to see your past search history and a look at a 5 day forecast.
 
   
   <img src = "./assets/images/image.jpg">
